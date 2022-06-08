@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>FORMULÁRIO</h1>
+    <form action="" method="get">
+        <label for="input-text">Digite seu nome</label>
+        <input type="text" placeholder="digite alguma coisa" name="texto" required class=""
+         name="texto" id="input-text">
+        <br>
+        <br>
+        <label for="password">Digite sua senha</label>
+        <input type="password" name="senha" id="password" required>
+        <br>
+        <br>
+        <textarea name="" id="" cols="30" rows="10">Digite aqui seu texto</textarea>
+    <br>
+    <br>
+        <button type="submit">Enviar</button>
+    <br>
+    <br>
+        <p>Selecione seus esportes favoritos:</p>
+        <input id="esporte-1" type="checkbox" value="fut" name="esporte" checked>Futebol
+        <input id="esporte-2" type="checkbox" value="vol" name="esporte" >Vôlei
+        <input id="esporte-3" type="checkbox" value="pet" name="esporte" >Peteca
+        <input id="esporte-4" type="checkbox" value="bas" name="esporte" >Basquete
+    <br>
+    <br>
+        <p>Selecione seu hub:</p>
+        <label for="hub1">
+            <input type="radio" id="hub1" name="hub" value="sp">São Paulo
+        </label>
+        <label for="hub2">
+            <input type="radio" id="hub2" name="hub" value="bh">Belo Horizonte
+        </label>
+        <label for="hub3">
+            <input type="radio" id="hub3" name="hub" value="fl">Florianópolis
+        </label>
+        <label for="hub4">
+            <input type="radio" id="hub4" name="hub" value="mc">Macedônia
+        </label>
+    <br>
+    <br>
+        <p>Selecione o estado onde mora:</p>
+        <select name="estado" id="dropdown-estado">
+            <option value="sp" name="sp">São Paulo</option>
+            <option value="ba" name="ba">Bahia</option>
+            <option value="mg" name="mg">Minas Gerais</option>
+            <option value="am" name="am">Amazonas</option>
+        </select>
+    </form>
+</body>
+</html>

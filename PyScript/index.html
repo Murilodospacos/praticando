@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <title>PyScript</title>
-    <py-env>
-        - numpy
-        - matplotlib
-        - paths:
-            - /dados.py
-    </py-env>
+
 </head>
+<py-env>
+    - numpy
+    - matplotlib
+    - paths:
+        - ./dados.py
+</py-env>
 <body>
     <h1>Nosso primeiro código com PyScript</h1>
         <py-script>
@@ -30,8 +31,9 @@
             x, y = x_y_aleatorio(n=1000)
 
             fig, ax = plt.subplots()
-            ax.scatter(x, y)
+            ax.step(x, y)
             fig
+
         </py-script>
     <py-repl id="my-repl" auto-generate="true"> </py-repl>
 </body>
